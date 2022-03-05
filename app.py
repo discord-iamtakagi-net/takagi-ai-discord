@@ -16,7 +16,7 @@ api_url = 'https://ai.iamtakagi.net/api/make_sentence'
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user}!")
-    activity = discord.Game(name="https://twitter.com/iamtakagi_ai")
+    activity = discord.Game(name="twitter.com/iamtakagi_ai")
     await bot.change_presence(activity=activity)
 
 
