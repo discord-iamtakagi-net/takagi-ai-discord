@@ -16,6 +16,8 @@ api_url = 'https://ai.iamtakagi.net/api/make_sentence'
 @bot.event
 async def on_ready():
     print(f"Logged in as {bot.user}!")
+    activity = discord.Game(name="https://twitter.com/iamtakagi_ai")
+    await bot.change_presence(activity=activity)
 
 
 @slash.slash(name='takagi', description='高木が喋ります')
